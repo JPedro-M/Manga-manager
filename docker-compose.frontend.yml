@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    container_name: manga-frontend
+    ports:
+      - "3000:80"  # Porta externa 3000, interna do Nginx 80
+    networks:
+      - manga-network
+    restart: always

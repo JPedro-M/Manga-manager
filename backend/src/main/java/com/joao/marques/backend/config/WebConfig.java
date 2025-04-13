@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
 	public void addCorsMappings(@NonNull CorsRegistry registry) {
 		// Permite todas as origens para a URL /manga
 		registry.addMapping("/manga")
-				.allowedOrigins("http://localhost:5173") // Substitua pelo seu domínio do frontend
+				.allowedOrigins("http://localhost:3000") // Substitua pelo seu domínio do frontend
 				.allowedMethods("GET", "POST", "PUT", "DELETE")
 				.allowedHeaders("*");
 	}
